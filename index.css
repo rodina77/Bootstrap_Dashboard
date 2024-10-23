@@ -1,0 +1,95 @@
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+#offcanvas {
+  background-color: #293042;    
+  position: fixed;  
+  top: 0;       
+  left: 0;          
+  height: 100vh;    
+  overflow-y: auto; 
+  z-index: 1030;    
+} 
+
+#main_page {
+  margin-left: 250px; 
+  transition: margin-left 0.5s; 
+}
+
+#main_page.full-width {
+  margin-left: 0; 
+  width: 100%;
+}
+table td , table th 
+{
+  color: #6C757D !important;
+  font-size: 13px;
+}
+table
+{
+  border-color: #a6aaad;
+  padding: 20px !important;
+  font-size: 11px !important;
+}
+table thead tr th
+{
+  color: #6C757D;
+  padding-top: 20px !important;
+}
+img:hover
+{
+  cursor: pointer;
+}
+#products,#products_details, #order , #customers
+{
+  cursor: pointer;
+}
+#products:hover , #products_details:hover , #order:hover, #customers:hover
+{
+  color: #568fed !important;
+}
+
+@media (max-width: 1220px) {
+  #offcanvas {
+    position: fixed;  
+    display: none;    
+  }
+}
+
+@media (min-width: 995px) {
+  #offcanvas {
+    display: block; 
+  }
+}
+
+@media (max-width: 1198px) {
+  #imgs_div
+  {
+    justify-content: center;
+  }
+}
+@media (max-width: 650px) {
+  #imgs_div img
+  {
+    width: 100%;
+  }
+}
+
+
+@media(max-width:587px)
+{
+  table td , table th 
+  {
+    font-size: 11px
+  };
+  #main_table
+  {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .p-4 {
+    padding: 0rem !important;
+  }
+
+}
